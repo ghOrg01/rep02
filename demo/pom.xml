@@ -55,5 +55,16 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+	<!-- 如果要上传自己的包，可以用github的仓库 -->
+    <distributionManagement>
+        <repository>
+         <!-- id需要与上面的server对应的id匹配 -->
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/ghOrg01/rep02</url>
+        </repository>
+    </distributionManagement>
+
 
 </project>
